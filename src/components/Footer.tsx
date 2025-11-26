@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import logo from "@/assets/ramusmkt-logo.png";
 
 export const Footer = () => {
   return (
@@ -8,9 +9,9 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="text-2xl font-black tracking-tight">
-              RAMUS<span className="text-accent">MKT</span>
-            </div>
+            <Link to="/" className="inline-block">
+              <img src={logo} alt="RAMUSMKT Logo" className="h-12 w-auto hover:opacity-80 transition-opacity" />
+            </Link>
             <p className="text-primary-foreground/80 text-sm">
               Transform your business with premium digital marketing services, brand strategy, and marketing automation.
             </p>
