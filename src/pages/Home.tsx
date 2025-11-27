@@ -69,35 +69,33 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent" />
+      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden min-h-[600px] md:min-h-[700px] flex items-center">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+        
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 animate-fade-in">
-              <h1 className="leading-tight">
-                Transform Your Business with{" "}
-                <span className="gradient-primary text-gradient">Digital Excellence</span>
-              </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl">
-                RAMUSMKT delivers premium digital marketing solutions that drive growth, build brands, and generate measurable results for businesses worldwide.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="accent" size="lg" asChild>
-                  <Link to="/contact">
-                    Get Started <ArrowRight className="ml-2" />
-                  </Link>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <Link to="/services">View Services</Link>
-                </Button>
-              </div>
-            </div>
-            <div className="relative animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <img
-                src={heroImage}
-                alt="Digital Marketing Analytics Dashboard"
-                className="rounded-2xl shadow-elegant w-full"
-              />
+          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+            <h1 className="leading-tight">
+              Transform Your Business with{" "}
+              <span className="gradient-primary text-gradient">Digital Excellence</span>
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              RAMUSMKT delivers premium digital marketing solutions that drive growth, build brands, and generate measurable results for businesses worldwide.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="accent" size="lg" asChild>
+                <Link to="/contact">
+                  Get Started <ArrowRight className="ml-2" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/services">View Services</Link>
+              </Button>
             </div>
           </div>
         </div>
