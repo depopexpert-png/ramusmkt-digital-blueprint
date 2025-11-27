@@ -141,6 +141,10 @@ All colors MUST be HSL.
     box-shadow: 0 10px 40px -10px hsl(var(--foreground) / 0.1);
   }
 
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+
   .animation-delay-1000 {
     animation-delay: 1s;
   }
