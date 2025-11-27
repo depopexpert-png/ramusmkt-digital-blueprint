@@ -84,7 +84,7 @@ const Home = () => {
               Transform Your Business with{" "}
               <span className="gradient-primary text-gradient">Digital Excellence</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-bold">
               RAMUSMKT delivers premium digital marketing solutions that drive growth, build brands, and generate measurable results for businesses worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
